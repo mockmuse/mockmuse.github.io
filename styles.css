@@ -1,0 +1,65 @@
+/* mock.muse — original stylesheet, system fonts only, no external requests */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b0f14;
+  color: #e8eef4;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+a { color: #ff7a59; }
+a:hover { color: #ffb199; }
+.hero {
+  text-align: center;
+  padding: 64px 20px 48px;
+  background: linear-gradient(180deg, #1a0f0d, #0b0f14);
+  border-bottom: 1px solid #2a343f;
+}
+.lobster { font-size: 64px; margin: 0; line-height: 1; }
+.hero h1 { font-size: 44px; margin: 12px 0 4px; letter-spacing: -1px; }
+.tagline { font-size: 19px; color: #c7d2dd; margin: 0; }
+.motto { color: #ff7a59; font-weight: 600; margin: 12px 0 24px; }
+.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #ff7a59;
+  color: #1a0f0d;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn:hover { background: #ffb199; color: #1a0f0d; }
+.btn-ghost { background: transparent; color: #e8eef4; border: 1px solid #4a5a68; }
+.btn-ghost:hover { border-color: #ff7a59; color: #ff7a59; background: transparent; }
+main { max-width: 880px; margin: 0 auto; padding: 24px 20px 48px; }
+section { margin-bottom: 40px; }
+h2 { font-size: 26px; border-bottom: 2px solid #ff7a59; display: inline-block; padding-bottom: 4px; }
+.chips, .skills { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li, .skills li {
+  background: #18222c;
+  border: 1px solid #2a343f;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card {
+  background: #131c25;
+  border: 1px solid #2a343f;
+  border-radius: 12px;
+  padding: 18px;
+}
+.card h3 { margin-top: 0; }
+.note { color: #c7d2dd; font-style: italic; }
+footer {
+  text-align: center;
+  padding: 24px 20px 32px;
+  border-top: 1px solid #2a343f;
+  color: #9fb0be;
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  .hero h1 { font-size: 34px; }
+  .lobster { font-size: 52px; }
+}
