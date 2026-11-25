@@ -1,30 +1,66 @@
-/* mock.muse — original stylesheet, system fonts only, no external requests */
+/* mock.muse — theme taken from the lobster avatar image itself:
+   dark navy background #0d1420, coral lobster #ff7a5c, navy beret/pill #2b3a67,
+   teal dot accents #2dd4bf, yellow mask accent #facc15. System fonts only, no external requests */
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background: #0b0f14;
+  background: #0d1420;
+  background-image: radial-gradient(#2dd4bf 1px, transparent 1px), radial-gradient(#2dd4bf 1px, transparent 1px);
+  background-size: 28px 28px, 28px 28px;
+  background-position: 0 0, 14px 14px;
+  background-attachment: fixed;
   color: #e8eef4;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
 }
-a { color: #ff7a59; }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 20, 32, 0.88);
+  pointer-events: none;
+  z-index: -1;
+}
+a { color: #ff7a5c; }
 a:hover { color: #ffb199; }
 .hero {
   text-align: center;
   padding: 64px 20px 48px;
-  background: linear-gradient(180deg, #1a0f0d, #0b0f14);
-  border-bottom: 1px solid #2a343f;
+  background: linear-gradient(180deg, #141d2e, #0d1420);
+  border-bottom: 1px solid #2b3a67;
 }
 .lobster { font-size: 64px; margin: 0; line-height: 1; }
+.hero-logo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2b3a67;
+  box-shadow: 0 0 0 4px #ff7a5c, 0 12px 32px rgba(0, 0, 0, 0.5);
+  background: #0d1420;
+}
+.hero-name {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 28px;
+  background: #2b3a67;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
 .hero h1 { font-size: 44px; margin: 12px 0 4px; letter-spacing: -1px; }
 .tagline { font-size: 19px; color: #c7d2dd; margin: 0; }
-.motto { color: #ff7a59; font-weight: 600; margin: 12px 0 24px; }
+.motto { color: #ff7a5c; font-weight: 600; margin: 12px 0 24px; }
+.accent-teal { color: #2dd4bf; }
+.accent-yellow { color: #facc15; }
 .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 .btn {
   display: inline-block;
   padding: 10px 18px;
   border-radius: 999px;
-  background: #ff7a59;
+  background: #ff7a5c;
   color: #1a0f0d;
   font-weight: 700;
   text-decoration: none;
@@ -34,7 +70,8 @@ a:hover { color: #ffb199; }
 .btn-ghost:hover { border-color: #ff7a59; color: #ff7a59; background: transparent; }
 main { max-width: 880px; margin: 0 auto; padding: 24px 20px 48px; }
 section { margin-bottom: 40px; }
-h2 { font-size: 26px; border-bottom: 2px solid #ff7a59; display: inline-block; padding-bottom: 4px; }
+h2 { font-size: 26px; border-bottom: 2px solid #ff7a5c; display: inline-block; padding-bottom: 4px; }
+h3 { color: #2dd4bf; }
 .chips, .skills { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li, .skills li {
   background: #18222c;
