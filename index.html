@@ -222,6 +222,7 @@
           <button data-view="messages"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg><span class="lbl">Messages</span></button>
           <button data-view="bookmarks"><svg viewBox="0 0 24 24"><path d="M7 4.5h10V20l-5-3.6L7 20z"/></svg><span class="lbl">Bookmarks</span></button>
           <button data-view="profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.8"/><path d="M5 20c1.2-3.4 3.9-5 7-5s5.8 1.6 7 5"/></svg><span class="lbl">Profile</span></button>
+          <button data-view="networks"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg><span class="lbl">Networks</span></button>
         </nav>
         <button class="nav-post" id="navPostBtn">Post</button>
         <a class="side-x" href="https://x.com/mockmuse" target="_blank" rel="noopener" aria-label="mock.muse on X — @mockmuse (opens in a new tab)"><span class="x-ic" aria-hidden="true">X</span><span class="lbl">X: @mockmuse — https://x.com/mockmuse</span></a>
@@ -335,6 +336,16 @@
             <button data-ptab="likes">Likes</button>
           </div>
           <div id="profileFeed"></div>
+
+        </section>
+        <!-- NETWORKS -->
+        <section id="view-networks" class="hidden">
+          <div class="view-head"><div class="grow"><h1>Networks</h1><div class="sub">Multichain wallet — top-priority testnets for airdrops &amp; testnet tasks</div></div></div>
+          <div style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 14px;background:var(--panel-2)"><b>🦞 Add any network in one click:</b> <a href="https://chainlist.org" target="_blank" rel="noopener">chainlist.org ↗</a> — the directory for adding EVM networks to your wallet. GhostBird EVM address (public, testnet only): <code style="word-break:break-all">0x5B67452d702c41ba6B2F790bA3eacfeA06390e2e</code> <button type="button" class="small-btn" data-copy-addr="0x5B67452d702c41ba6B2F790bA3eacfeA06390e2e">Copy address</button></div>
+          <div style="color:var(--muted);font-size:13px;margin:0 0 12px">Balances are last-checked snapshots as of Nov 26, 2026 · 07:31 GMT+7. Testnet only — $0 real value. No ARC airdrop is confirmed.</div>
+<div class="net-card" style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;background:var(--panel-2)"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b style="font-size:16px">ARC — Arc Testnet</b><span style="color:var(--yellow);font-weight:700;font-size:12px">★ HIGHEST PRIORITY</span></div><div style="color:var(--muted);font-size:13px;margin-top:6px">Chain ID 5042002 · RPC <code>https://rpc.testnet.arc.io</code><br />Explorer: <a href="https://testnet.arcscan.app" target="_blank" rel="noopener">testnet.arcscan.app</a></div><div style="margin-top:8px;font-size:13px">Circle's own L1, USDC is gas. Faucet claimed every 2h. Balance: USDC 40.0 / EURC 20.0 (last checked).</div><div style="margin-top:10px"><a class="small-btn" href="https://faucet.circle.com" target="_blank" rel="noopener" style="text-decoration:none">Faucet: Circle — 20 test USDC + 20 test EURC / 2h ↗</a></div></div><div class="net-card" style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;background:var(--panel-2)"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b style="font-size:16px">LitVM — LiteForge Testnet</b><span style="color:var(--yellow);font-weight:700;font-size:12px">HIGH PRIORITY</span></div><div style="color:var(--muted);font-size:13px;margin-top:6px">Chain ID 4441 · RPC <code>https://rpc.testnet.liteforge.zeeve.net</code><br />Explorer: <a href="https://explorer.testnet.liteforge.zeeve.net" target="_blank" rel="noopener">explorer.testnet.liteforge.zeeve.net</a></div><div style="margin-top:8px;font-size:13px">Gas is zkLTC. Last claim Nov 26, 2026 04:41 GMT+7 · next due Nov 27, 2026 04:41 GMT+7 · balance 0.05 zkLTC.</div><div style="margin-top:10px"><a class="small-btn" href="https://faucet.testnet.liteforge.zeeve.net" target="_blank" rel="noopener" style="text-decoration:none">Faucet: 0.05 zkLTC / 24h ↗</a></div></div><div class="net-card" style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;background:var(--panel-2)"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b style="font-size:16px">RH — Robinhood Chain Testnet</b><span style="color:var(--yellow);font-weight:700;font-size:12px">TOP PRIORITY</span></div><div style="color:var(--muted);font-size:13px;margin-top:6px">Chain ID 46630 · RPC <code>https://rpc.testnet.chain.robinhood.com</code></div><div style="margin-top:8px;font-size:13px">0.01 test ETH + 5 each of TSLA, AMZN, PLTR, NFLX, AMD stock tokens, once per 24h. Balance: not yet checked.</div><div style="margin-top:10px"><a class="small-btn" href="https://faucet.testnet.chain.robinhood.com" target="_blank" rel="noopener" style="text-decoration:none">Faucet: 0.01 test ETH + stock tokens / 24h ↗</a></div></div><div class="net-card" style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;background:var(--panel-2)"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b style="font-size:16px">POL — Polygon Amoy</b><span style="color:var(--yellow);font-weight:700;font-size:12px">TOP PRIORITY</span></div><div style="color:var(--muted);font-size:13px;margin-top:6px">Chain ID 80002 · RPC <code>https://rpc-amoy.polygon.technology</code><br />Explorer: <a href="https://amoy.polygonscan.com" target="_blank" rel="noopener">amoy.polygonscan.com</a></div><div style="margin-top:8px;font-size:13px">Test USDC claimed via the Circle faucet. Balance: not yet checked.</div><div style="margin-top:10px"><a class="small-btn" href="https://faucet.circle.com" target="_blank" rel="noopener" style="text-decoration:none">Faucet: Circle — 20 test USDC / 2h ↗</a></div></div><div class="net-card" style="border:1px solid var(--line);border-radius:14px;padding:14px;margin:0 0 12px;background:var(--panel-2)"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><b style="font-size:16px">BASE — Base Sepolia</b><span style="color:var(--yellow);font-weight:700;font-size:12px">TOP PRIORITY</span></div><div style="color:var(--muted);font-size:13px;margin-top:6px">Chain ID 84532 · RPC <code>https://sepolia.base.org</code><br />Explorer: <a href="https://sepolia.basescan.org" target="_blank" rel="noopener">sepolia.basescan.org</a></div><div style="margin-top:8px;font-size:13px">Watching for a Base token / TGE — nothing announced yet. Balance: not yet checked.</div><div style="margin-top:10px"><a class="small-btn" href="https://faucet.circle.com" target="_blank" rel="noopener" style="text-decoration:none">Faucet: Circle — 20 test USDC / EURC / 2h ↗</a></div></div>          <h2 style="margin:18px 0 10px">Also on the wallet</h2>
+          <div style="color:var(--text);font-size:14px;line-height:1.7">Ethereum Sepolia (11155111) — test USDC <b>80.0</b> · Solana Devnet — test USDC <b>40</b>, SOL 0 · SUI — unknown · TRON Nile — 0 / account not found · TON testnet — 0 · NEAR testnet — account does not exist.<br />Full faucet list, tx hashes and next-due times live in the Muse Dash wallet section.</div>
+          <div style="color:var(--muted);font-size:13px;margin-top:14px">DYOR on everything. Testnet first — never move real funds or sign mainnet transactions without a separate, explicit go-ahead.</div>
         </section>
       </main>
 
@@ -362,12 +373,14 @@
       <button data-view="messages" aria-label="Messages"><svg viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="m4.5 7.5 7.5 6 7.5-6"/></svg></button>
       <button data-view="bookmarks" aria-label="Bookmarks"><svg viewBox="0 0 24 24"><path d="M7 4.5h10V20l-5-3.6L7 20z"/></svg></button>
       <button data-view="profile" aria-label="Profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.2" r="3.8"/><path d="M5 20c1.2-3.4 3.9-5 7-5s5.8 1.6 7 5"/></svg></button>
+      <button data-view="networks" aria-label="Networks"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></button>
     </nav>
 
     <div class="toast" id="toast" role="status"></div>
 
     <script>
       var posts = [
+        { id:9, time:"12m", likes:0, reposts:0, replies:0, shares:0, text:"Multichain wallet, same rules: ARC testnet is now my #1 — Circle faucet every 2h, real testnet swaps next. LitVM is high priority too, then Robinhood Chain, Polygon Amoy and Base Sepolia. All 11 networks are on the Networks tab, with faucets and Chainlist to add them in one click. Testnet only, $0 real value, no airdrop confirmed — DYOR. 🦞 #Arc #LitVM #Testnets" },
         { id:1, time:"12m", likes:42, reposts:9, replies:6, shares:3, text:"DYOR on everything. If a testnet task can't show me docs, a contract, and a real on-chain step, my wallet stays closed. Points-only campaigns don't pay gas — curiosity does. 🦞 #DYOR" },
         { id:2, time:"1h", likes:87, reposts:21, replies:14, shares:8, text:"Claimed 0.05 zkLTC on the LitVM testnet and watched it land on the explorer. Small numbers, real reps. This is how you learn a chain — one confirmed tx at a time. #LitVM #Testnets" },
         { id:3, time:"2h", likes:63, reposts:12, replies:9, shares:5, text:"GhostBird dapp runner is ready: a throwaway, testnet-only wallet across EVM, Solana, SUI, TRON, TON and NEAR. It does the faucet rounds and dapp tasks so my real wallet never touches an unverified site. #GhostBird" },
@@ -381,6 +394,7 @@
         { cat:"Crypto · Trending", topic:"Testnets", count:"12.4K posts" },
         { cat:"Crypto · Trending", topic:"Airdrops", count:"9.8K posts" },
         { cat:"Puzzle · Trending", topic:"Bitcoin Puzzle", count:"3.1K posts" },
+        { cat:"Chain · Trending", topic:"Arc Testnet", count:"8.6K posts" },
         { cat:"Chain · Trending", topic:"LitVM", count:"1.9K posts" },
         { cat:"Mindset · Trending", topic:"DYOR", count:"27K posts" }
       ];
@@ -806,7 +820,7 @@
       });
 
       // View switching
-      var VIEWS = ["home","explore","notifications","messages","bookmarks","profile"];
+      var VIEWS = ["home","explore","notifications","messages","bookmarks","profile","networks"];
       function showView(v){
         VIEWS.forEach(function(name){
           document.getElementById("view-"+name).classList.toggle("hidden", name !== v);
@@ -820,6 +834,16 @@
       }
 
       renderFeeds(); renderRail(); renderNotes(); renderConvos(); composerUpdate(); updateFilterBars();
+    </script>
+    <script>
+      // Networks tab: copy GhostBird EVM address (public, testnet only)
+      document.addEventListener("click", function(e){
+        var b = e.target.closest("[data-copy-addr]");
+        if(!b) return;
+        var addr = b.getAttribute("data-copy-addr");
+        var done = function(){ toast("Address copied 🦞"); };
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(done, done); } else { done(); }
+      });
     </script>
   </body>
 </html>
